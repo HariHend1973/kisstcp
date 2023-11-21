@@ -8,7 +8,7 @@ KISS_TFEND = 0xDC  # If after an escape, means there was an 0xC0 in the source m
 KISS_TFESC = 0xDD  # If after an escape, means there was an 0xDB in the source message
 
 if len(sys.argv) < 4:
-    print("Usage: %s <source callsign> <destination callsign> <message> [path1 [path2]]" % sys.argv[0])
+    print("Usage: %s <source callsign> <destination callsign> [path1 [path2]] <message>" % sys.argv[0]) #Use quotes for messages! i.e. NA7Q APRS WIDE1-1 ">This is a status beacon"
     sys.exit(1)
 
 # Addresses must be 6 bytes plus the SSID byte, each character shifted left by 1
